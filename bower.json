@@ -1,0 +1,17 @@
+{
+  "name": "package",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "bootstrap": "~3.2.0",
+    "heartcode-canvasloader": "https://raw.githubusercontent.com/heartcode/CanvasLoader/master/js/heartcode-canvasloader.js",
+    "font-awesome": "~4.3.0",
+    "TweenJS": "~0.6.1",
+    "EaselJS": "~0.8.1",
+    "PreloadJS": "~0.6.1",
+    "modernizr": "~2.8.3",
+    "devicon": "*"
+  },
+  "devDependencies": {}
+}

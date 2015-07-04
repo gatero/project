@@ -1,0 +1,26 @@
+{
+  "name": "package",
+  "version": "0.0.0",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-core": "^3.1.1",
+    "browser-sync": "^1.5.4",
+    "del": "^0.1.3",
+    "gulp": "^3.8.8",
+    "gulp-imagemin": "^1.0.1",
+    "gulp-coffee": "^2.3.1",
+    "gulp-jade": "^0.8.0",
+    "gulp-jshint": "^1.8.5",
+    "gulp-less": "^1.3.6",
+    "gulp-load-plugins": "^0.7.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-postcss": "^2.0.0",
+    "gulp-rev": "^5.0.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-usemin": "^0.3.11",
+    "gulp-util": "^3.0.1",
+    "wiredep": "^2.2.2"
+  }
+}
