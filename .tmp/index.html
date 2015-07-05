@@ -2,16 +2,53 @@
 <html lang="en">
   <head>
     <title>gulp + jade + less + coffee</title>
-    <!-- build:css(.tmp) /styles/main.css-->
+    <meta charset="utf-8"/>
+    <title>daniel ortega mx</title>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rev="made" href="mailto:daniel@gatero.mx"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="Daniel Ortega"/>
+    <meta name="reply-to" content="daniel@gatero.mx"/>
+    <meta name="keywords" content="Daniel Ortega"/>
+    <meta name="Resource-type" content="Homepage"/>
+    <meta name="DateCreated" content="Tue, 5 May 2015 00:00:00 GMT+1"/>
+    <meta name="Revisit-after" content="6 days"/>
+    <meta name="robots" content="all"/>
+    <meta property="og:title" content="Daniel Ortega"/>
+    <meta property="og:site_name" content="Portafolio Web"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:description" content="Información de contacto" graph="hola"/>
+    <meta property="og:image" content="hola"/>
+    <!-- build:css(.tmp) /styles/vendor.css-->
     <!-- bower:css-->
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="../bower_components/devicon/devicon.min.css">
     <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:css1(.tmp) /styles/main.css-->
     <link rel="stylesheet" href="/styles/main.css">
     <!-- endbuild-->
   </head>
   <body>
-    <!-- content-->
+    <nav role="navigation" class="navbar navbar-green navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header"><a href="#" rel="logotipo" class="navbar-brand"><img src="/images/logo-sm.png"/></a></div>
+        <div class="site-menu">
+          <ul class="nav navbar-nav"> 
+            <li class="active"><a href="index.html" rel="Sobre mí">
+                <div class="text-center"><span class="icon pawn"><br/></span></div><span>Sobre mí</span></a></li>
+            <li><a href="experiencia.html" rel="Experiencia">
+                <div class="text-center"><span class="icon cloud"><br/></span></div><span>Experiencia</span></a></li>
+            <li><a href="portafolio.html" rel="Portafolio">
+                <div class="text-center"><span class="icon square"><br/></span></div><span>Portafolio</span></a></li>
+            <li><a href="contacto.html" rel="Contacto">
+                <div class="text-center"><span class="icon dialog"><br/></span></div><span>Contacto</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <h1>Hi!</h1>
     <main>
       <div>
@@ -22,7 +59,8 @@
         <h2>PNG image</h2><img src="./images/github.png" width="128">
       </div>
     </main>
-    <!-- build:js(.tmp) /scripts/main.js-->
+    <footer></footer>
+    <!-- build:js /scripts/vendor.js-->
     <!-- bower:js-->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -33,6 +71,8 @@
     <script src="../bower_components/EaselJS/lib/easeljs-0.8.1.combined.js"></script>
     <script src="../bower_components/PreloadJS/lib/preloadjs-0.6.1.combined.js"></script>
     <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js1(.tmp) /scripts/main.js-->
     <script src="/scripts/main.js"></script>
     <!-- endbuild-->
   </body>

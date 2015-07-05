@@ -49,8 +49,8 @@ gulp.task('usemin', function () {
     .src(config.tmp+'/*.html')
     .pipe(
       $.usemin({
-        css: [$.minifyCss(), 'concat'],
         html: false,
+        css: [$.minifyCss(), $.rev()],
         js: [$.uglify(), $.rev()],
         inlinejs: [$.uglify()],
         inlinecss: [$.minifyCss(), 'concat']
@@ -74,7 +74,10 @@ gulp.task('bower', function () {
 
 gulp.task('coffee', function() {
   gulp
-    .src(config.app+'/scripts/*.coffee')
+    .src(config.app+'/scripts/main.coffee')
+    .pipe(
+      $.include().on('error', $.util.log)
+    )
     .pipe(
       $.coffee({
         bare: true
@@ -87,8 +90,8 @@ gulp.task('coffee', function() {
 gulp.task('jade', function(){
   gulp
     .src([
-      '!'+config.app+'/jade/layout.jade',
-      config.app+'/jade/*.jade'
+      '!'+config.app+'/jade/template.jade',
+      config.app+'/jade/views/*.jade'
     ])
     .pipe(
       $.jade({

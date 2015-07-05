@@ -1,23 +1,38 @@
 //- layout.jade
+include ./mixins.jade
+
 doctype html
 html(lang="en")
   head
-    title gulp + jade + less + coffee
+    //- title
+    block title
 
-    // build:css(.tmp) /styles/main.css
+    //- meta tags
+    +meta_tags
+
+    // build:css(.tmp) /styles/vendor.css
     // bower:css
     link(rel='stylesheet', href='../bower_components/font-awesome/css/font-awesome.css')
     link(rel='stylesheet', href='../bower_components/devicon/devicon.min.css')
     // endbower
+    // endbuild
+
+    // build:css1(.tmp) /styles/main.css
     link(rel='stylesheet', href='/styles/main.css')
     // endbuild
 
   body
 
-    // content
+    //- header
+    +header
+
+    //- content
     block content
 
-    // build:js(.tmp) /scripts/main.js
+    //- footer
+    +footer
+
+    // build:js /scripts/vendor.js
     // bower:js
     script(src='../bower_components/modernizr/modernizr.js')
     script(src='../bower_components/jquery/dist/jquery.js')
@@ -28,5 +43,8 @@ html(lang="en")
     script(src='../bower_components/EaselJS/lib/easeljs-0.8.1.combined.js')
     script(src='../bower_components/PreloadJS/lib/preloadjs-0.6.1.combined.js')
     // endbower
+    // endbuild
+
+    // build:js1(.tmp) /scripts/main.js
     script(src='/scripts/main.js')
     // endbuild
