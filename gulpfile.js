@@ -25,7 +25,7 @@ var gulp = require('gulp'),
 
 gulp.task('styles', function() {
   gulp
-    .src(config.app+'/**/*.less')
+    .src(config.app+'/styles/main.less')
     .pipe(
       $.less({
         paths: ['bower_components']
@@ -39,7 +39,7 @@ gulp.task('styles', function() {
         ])
         .on('error', $.util.log)
       )
-      .pipe(gulp.dest(config.tmp))
+      .pipe(gulp.dest(config.tmp+'/styles'))
       .pipe(browserSync.reload({stream: true})
     );
 });

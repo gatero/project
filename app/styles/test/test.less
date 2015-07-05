@@ -1,0 +1,20 @@
+#test{
+  .this(@color:red){
+    outline: 1px solid @color;
+  }
+  .all(@color:red){
+    &, *{
+      outline: 1px solid @color;
+    }
+  }
+  .content(@color:red){
+    *{
+      outline: 1px solid @color;
+    }
+  }
+  .childs(@color:red){
+    & > *{
+      outline: 1px solid @color;
+    }
+  }
+}
