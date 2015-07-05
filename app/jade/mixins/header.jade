@@ -1,29 +1,10 @@
 mixin header
 	//- Navbar for my site
-	nav(role="navigation").navbar.navbar-green.navbar-fixed-top
-		.container
+	nav(role="navigation").navbar.navbar-default
+		.container-fluid
 			.navbar-header
-				a(href="#", rel='logotipo').navbar-brand
-					img(src='/images/logo-sm.png')
+				a(href="#").navbar-brand brand
 			.site-menu
-				ul.nav.navbar-nav 
-					li.active: a(href="index.html", rel='Sobre mí')
-						.text-center
-							span.icon.pawn: br
-						span Sobre mí
-					//- li: a(href="#", rel='Habilidades')
-					//- 	.text-center
-					//- 		span.icon.plume: br
-					//- 	span Habilidades
-					li: a(href="experiencia.html", rel='Experiencia')
-						.text-center
-							span.icon.cloud: br
-						span Experiencia
-					li: a(href="portafolio.html", rel='Portafolio')
-						.text-center
-							span.icon.square: br
-						span Portafolio
-					li: a(href="contacto.html", rel='Contacto')
-						.text-center
-							span.icon.dialog: br
-						span Contacto
+				ul.nav.navbar-nav
+					li.active: a(href="#")
+						span home
