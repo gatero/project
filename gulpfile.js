@@ -64,6 +64,7 @@ gulp.task('bower', function () {
     .src(config.app+'/jade/layout.jade')
     .pipe(
       wiredep({
+        exclude: 'bower_components/bootstrap/dist/css',
         ignorePath: /^\/|\.\.\//,
         directory: 'bower_components'
       }).on('error', $.util.log)
@@ -116,7 +117,10 @@ gulp.task('images', function() {
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
-      baseDir: config.tmp
+      baseDir: config.tmp,
+      routes: {
+        "/bower_components": "bower_components"
+      }
     }
   });
 });
