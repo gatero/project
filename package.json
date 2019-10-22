@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "2.5.8",
-    "mongoose": "2.6.5"
+    "mongoose": "5.7.6"
   },
   "devDependencies": {
     "autoprefixer-core": "^3.1.1",
